@@ -27,24 +27,12 @@ Usage:
 3.  Enter the URL of the website you want to analyse and click "Analyse".
 4.  The app will display a report of the SEO issues found.
 
-## Limitations
 
-*   This is a basic SEO analyzer and does not cover all possible SEO issues.
-*   The broken link checker is a simplified implementation and may not be fully accurate.
-*   The tool does not currently check for other important SEO factors like:
-    *   Keyword density
-    *   Image optimization
-    *   Mobile-friendliness
-    *   Page speed
-    *   Structured data
-    *   HTTPS
-    *   and many more...
+Contributing:
 
-## Contributing
+Contributions are welcome! Feel free to add SEO analysis modules or pull requests.
 
-Contributions are welcome! Feel free to open issues or pull requests.
-
-## License
+License:
 
 This project is licensed under the MIT License   
  - see the [LICENSE](LICENSE) file for details.
