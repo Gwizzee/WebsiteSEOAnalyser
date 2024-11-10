@@ -1,1 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SEO Report</title>
+</head>
+<body>
+    <h1>SEO Report for {{ url }}</h1>
 
+    {% if seo_issues %}
+        <h2>SEO Issues Found:</h2>
+        <ul>
+            {% for issue, details in seo_issues.items() %}
+                <li>
+                    <strong>{{ issue }}:</strong> 
+                    {% if isinstance(details, list) %}
+                        <ul>
+                            {% for item in details %}
+                                <li>{{ item }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% else %}
+                        {{ details }}
+                    {% endif %}
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No major SEO issues found.</p>
+    {% endif %}
+</body>
+</html>
